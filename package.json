@@ -1,0 +1,31 @@
+{
+  "name": "epitech_intranet_api",
+  "version": "1.0.1",
+  "description": "api for epitech student that want to use request on intranet",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BastienBoymond/epitechIntranetApi.git"
+  },
+  "keywords": [
+    "Intranet",
+    "Intra",
+    "Epitech",
+    "Api",
+    "epitech_api",
+    "intranet_api",
+    "intra_api"
+  ],
+  "author": "BastienBoymond",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BastienBoymond/epitechIntranetApi/issues"
+  },
+  "homepage": "https://github.com/BastienBoymond/epitechIntranetApi#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
