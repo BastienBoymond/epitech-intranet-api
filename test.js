@@ -1,8 +1,8 @@
 const IntranetApi = require("./index");
 
-const intra = new IntranetApi(
-  "https://intra.epitech.eu/auth-6600189fa8de9678ca63a046fdf6e2455fd9acc7"
-);
+const token = JSON.parse(fs.readFileSync("token.json").toString());
+
+const intra = new IntranetApi(token.token);
 
 intra.user.getGpa().then(function (GPA) {
   console.log(GPA);
