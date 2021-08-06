@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 const IntranetApi = require("./index");
 
 const token = JSON.parse(fs.readFileSync("token.json").toString());
