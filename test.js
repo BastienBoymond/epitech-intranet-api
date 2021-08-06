@@ -1,7 +1,7 @@
 const IntranetApi = require("./index");
 
 const intra = new IntranetApi(
-  "https://intra.epitech.eu/auth-1e67ff171ee7508ce6f0a66cd3ea883dd60f9482"
+  "https://intra.epitech.eu/auth-6600189fa8de9678ca63a046fdf6e2455fd9acc7"
 );
 
 intra.user.getGpa().then(function (GPA) {

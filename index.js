@@ -13,7 +13,6 @@ class IntranetApi {
     this.login = null;
     this.city = null;
     this.year = null;
-    this.initData();
     this.user = new User(this);
   }
 

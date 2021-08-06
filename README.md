@@ -1,12 +1,15 @@
 # epitechIntranetApi
 Api for Epitech Intranet
-Use it:
+    https://www.npmjs.com/package/epitech_intranet_api
+# Install
+    npm i epitech_intranet_api
+# Use it:
         
         const IntraApiEpi = require("epitechIntranetApi");
 
         const intra = new IntranetApi("Your autologin");
 
-User:
+# User:
 
     getGpa
         intra.user.getGpa() return the user GPA
