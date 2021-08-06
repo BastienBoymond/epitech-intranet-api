@@ -33,3 +33,27 @@ intra.user.getEpitechEmail().then(function (epiEmail) {
 intra.user.getBinomes().then(function (binomes) {
   console.log(binomes);
 });
+
+intra.user.getFlags().then(function (flags)  {
+  console.log(flags);
+});
+
+intra.user.getFlags("medal").then(function (flags) {
+  console.log(flags);
+});
+
+intra.user.getFlags("remarkable").then(function (flags) {
+  console.log(flags);
+});
+
+intra.user.getPicture().then(function (picture) {
+  console.log(picture);
+});
+
+intra.user.getSemester().then(function (semester) {
+  console.log(semester);
+});
+
+intra.user.getProfile().then(function (profile) {
+  console.log(profile);
+});
