@@ -2,6 +2,7 @@ const axios = require("axios");
 
 const User = require("./lib/user");
 const Module = require("./lib/module");
+const Planning = require("./lib/planning");
 
 class IntranetApi {
   /**
@@ -16,12 +17,13 @@ class IntranetApi {
     this.year = null;
     this.user = new User(this);
     this.module = new Module(this);
+    this.planning = new Planning(this);
   }
 
-  async get(endpoint, resolveonError) {
+  async get(endpoint, filter, resolveonError) {
     return new Promise((resolve, reject) => {
       axios
-        .get(`${this.url}${endpoint}?format=json`)
+        .get(`${this.url}${endpoint}?format=json${filter}`)
         .then((response) => {
           resolve(response.data);
         })

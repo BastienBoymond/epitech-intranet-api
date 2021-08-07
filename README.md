@@ -35,7 +35,7 @@ Api for Epitech Intranet
     getPicture
         intra.user.getPicture() return the user url Picture
 
-# Module:
+# Modules:
 
     getAllModules
         intra.module.getAllModules() return all the modules
@@ -45,4 +45,8 @@ Api for Epitech Intranet
         intra.module.getModuleById(moduleId) return the module with the id
     getModuleByStatus
         intra.module.getModuleByStatus(status) return all the modules with the status
-    
+
+# Planning :
+
+    getCurrentPlanning
+        intra.planning.getCurrentPlanning() return the current planning with possible args like "semester"
