@@ -20,6 +20,8 @@ Api for Epitech Intranet
         intra.user.getPromo() return the user Promo
     getScolarYear
         intra.user.getScolarYear() return the user ScolarYear
+    getStudentYear
+        intra.user.getStudentYear() return the user StudentYear
     getEpitechEmail
         intra.user.getEpitechEmail() return the user Epitech Email
     getBinomes
@@ -32,3 +34,15 @@ Api for Epitech Intranet
         intra.user.getFlags("ghost") return the user Ghost Flags
     getPicture
         intra.user.getPicture() return the user url Picture
+
+# Module:
+
+    getAllModules
+        intra.module.getAllModules() return all the modules
+    getModulesBySemester 
+        intra.module.getModulesBySemester(semester) return all the modules of the semester
+    getModuleById
+        intra.module.getModuleById(moduleId) return the module with the id
+    getModuleByStatus
+        intra.module.getModuleByStatus(status) return all the modules with the status
+    
