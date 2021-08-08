@@ -24,9 +24,25 @@ class IntranetApi {
 
   async get(endpoint, filter, resolveonError) {
     return new Promise((resolve, reject) => {
-      console.log(`GET ${this.url}${endpoint}`);
       axios
         .get(`${this.url}${endpoint}?format=json${filter}`)
+        .then((response) => {
+          resolve(response.data);
+        })
+        .catch((error) => {
+          if (resolveonError) {
+            resolve(error.response.data);
+          } else {
+            reject(error);
+          }
+        });
+    });
+  }
+
+  async post(endpoint, data, resolveonError) {
+    return new Promise((resolve, reject) => {
+      axios
+        .post(`${this.url}${endpoint}`, data)
         .then((response) => {
           resolve(response.data);
         })
