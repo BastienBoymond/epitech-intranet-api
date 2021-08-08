@@ -45,8 +45,14 @@ Api for Epitech Intranet
         intra.module.getModuleById(moduleId) return the module with the id
     getModuleByStatus
         intra.module.getModuleByStatus(status) return all the modules with the status
+    getModuleByGrades
+        intra.module.getModuleByGrades(grades) return all the modules with the grades
 
 # Planning :
 
     getCurrentPlanning
         intra.planning.getCurrentPlanning() return the current planning with possible args like "semester"
+
+# Grades :
+    getGrades
+        intra.grades.getGrades() return all the grades or separetely by moduleId

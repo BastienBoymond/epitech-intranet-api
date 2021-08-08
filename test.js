@@ -78,6 +78,14 @@ const intra = new IntranetApi(token.token);
 //   console.log(module);
 // });
 
+intra.module.getModuleByGrades("C").then(function (modules) {
+  console.log(modules);
+});
+
 // intra.planning.getCurrentPlanning(2).then(function (plannings) {
 //   console.log(plannings);
+// });
+
+// intra.grades.getGrades("B-MUL-100").then(function (grades) {
+//   console.log(grades);
 // });
