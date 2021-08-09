@@ -4,6 +4,7 @@ const User = require("./lib/user");
 const Module = require("./lib/module");
 const Planning = require("./lib/planning");
 const Grades = require("./lib/grades");
+const Home = require("./lib/home");
 
 class IntranetApi {
   /**
@@ -20,6 +21,7 @@ class IntranetApi {
     this.module = new Module(this);
     this.grades = new Grades(this);
     this.planning = new Planning(this);
+    this.home = new Home(this);
   }
 
   async get(endpoint, filter, resolveonError) {

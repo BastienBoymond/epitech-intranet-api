@@ -89,3 +89,23 @@ const intra = new IntranetApi(token.token);
 // intra.grades.getGrades("B-MUL-100").then(function (grades) {
 //   console.log(grades);
 // });
+
+// intra.user.getNotification("message").then(function (notification) {
+//   console.log(notification);
+// });
+
+// intra.home.getBoard().then(function (users) {
+//   console.log(users);
+// });
+
+// intra.home.getCurrentProjet().then(function (projet) {
+//   console.log(projet);
+// });
+
+// intra.home.getCurrentNotes().then(function (notes) {
+//   console.log(notes);
+// });
+
+// intra.home.getCurrentActivity().then(function (activity) {
+//   console.log(activity);
+// });

@@ -34,6 +34,8 @@ Api for Epitech Intranet
         intra.user.getFlags("ghost") return the user Ghost Flags
     getPicture
         intra.user.getPicture() return the user url Picture
+    getNotifications
+        intra.user.getNotifications() return the user Notifications
 
 # Modules:
 
@@ -56,3 +58,13 @@ Api for Epitech Intranet
 # Grades :
     getGrades
         intra.grades.getGrades() return all the grades or separetely by moduleId
+
+# Home :
+    getBoard
+        intra.home.getBoard() return the Home Board page of Intranet
+    getCurrentProjet
+        intra.home.getCurrentProjet() return the current projet
+    getCurrentNotes
+        intra.home.getCurrentNotes() return the current notes
+    getCurrentActivity
+        intra.home.getCurrentActivity() return the current activity
