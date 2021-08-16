@@ -62,7 +62,7 @@ const intra = new IntranetApi(token.token);
 //   console.log(modules);
 // });
 
-// intra.module.getModuleById("B-MUL-100").then(function (module) {
+// intra.module.getModuleById("B-INN-000").then(function (module) {
 //   console.log(module);
 // });
 
@@ -98,14 +98,34 @@ const intra = new IntranetApi(token.token);
 //   console.log(users);
 // });
 
-// intra.home.getCurrentProjet().then(function (projet) {
+// intra.project.getCurrentProjet().then(function (projet) {
 //   console.log(projet);
 // });
 
-// intra.home.getCurrentNotes().then(function (notes) {
+// intra.grades.getCurrentNotes().then(function (notes) {
 //   console.log(notes);
 // });
 
 // intra.home.getCurrentActivity().then(function (activity) {
 //   console.log(activity);
+// });
+
+// intra.project.getProjectByModule("B-MUL-100").then(function (projet) {
+//   console.log(projet);
+// });
+
+// intra.project.getProjectByModuleAndName("B-MUL-100", "MyradAr").then(function (projet) {
+//   console.log(projet);
+// });
+
+// intra.project.getCurrentProjectByName("stage").then(function (projet) {
+//   console.log(projet);
+// });
+
+// intra.module.registerModule("B-PRO-300").then(function (module) {
+//   console.log(module);
+// });
+
+// intra.module.unregisterModule("B-PRO-300").then(function (module) {
+//   console.log(module);
 // });

@@ -5,6 +5,7 @@ const Module = require("./lib/module");
 const Planning = require("./lib/planning");
 const Grades = require("./lib/grades");
 const Home = require("./lib/home");
+const Projet = require("./lib/project");
 
 class IntranetApi {
   /**
@@ -22,6 +23,7 @@ class IntranetApi {
     this.grades = new Grades(this);
     this.planning = new Planning(this);
     this.home = new Home(this);
+    this.project = new Projet(this);
   }
 
   async get(endpoint, filter, resolveonError) {
@@ -44,7 +46,7 @@ class IntranetApi {
   async post(endpoint, data, resolveonError) {
     return new Promise((resolve, reject) => {
       axios
-        .post(`${this.url}${endpoint}`, data)
+        .post(`${this.url}${endpoint}?format=json`, data)
         .then((response) => {
           resolve(response.data);
         })

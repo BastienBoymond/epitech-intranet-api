@@ -49,6 +49,10 @@ Api for Epitech Intranet
         intra.module.getModuleByStatus(status) return all the modules with the status
     getModuleByGrades
         intra.module.getModuleByGrades(grades) return all the modules with the grades
+    registerModule
+        intra.module.registerModule(module) register you to a module
+    unregisterModule
+        intra.module.unregisterModule(module) unregister you from a module
 
 # Planning :
 
@@ -58,13 +62,21 @@ Api for Epitech Intranet
 # Grades :
     getGrades
         intra.grades.getGrades() return all the grades or separetely by moduleId
+    getCurrentNotes
+        intra.home.getCurrentNotes() return the current notes
 
 # Home :
     getBoard
         intra.home.getBoard() return the Home Board page of Intranet
-    getCurrentProjet
-        intra.home.getCurrentProjet() return the current projet
-    getCurrentNotes
-        intra.home.getCurrentNotes() return the current notes
     getCurrentActivity
         intra.home.getCurrentActivity() return the current activity
+
+# Projects :
+    getCurrentProjet
+        intra.project.getCurrentProjet() return the current projet
+    getCurrentProjectByName
+        intra.project.getCurrentProjectByName(name) return the current project with the name
+    getProjectByModdule
+        intra.project.getProjectByModdule(moduleId) return the project with the moduleId
+    getProjectByModuleAndName
+        intra.project.getProjectByModuleAndName(moduleId, name) return the project with the moduleId and name
