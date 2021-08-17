@@ -129,3 +129,27 @@ const intra = new IntranetApi(token.token);
 // intra.module.unregisterModule("B-PRO-300").then(function (module) {
 //   console.log(module);
 // });
+
+// intra.project.getActiviyProject("B-MUL-100", "myRadar").then(function (projet) {
+//   console.log(projet);
+// });
+
+// intra.project.unregisterProject("B-PRO-300", "Internship").then(function (projet) {
+//   console.log(projet);
+// });
+
+// intra.project.registerProject("B-PRO-300", "Internship").then(function (projet) {
+//   console.log(projet);
+// });
+
+// intra.project.getProjectFile("B-PRO-300", "Internship").then(function (file) {
+//   console.log(file);
+// });
+
+// intra.project.getStatusRegisterProject("B-PRO-300", "Internship").then(function (status) {
+//   console.log(status);
+// });
+
+// intra.module.getStatusRegisterModule("B-PRO-300").then(function (status) {
+//   console.log(status);
+// });

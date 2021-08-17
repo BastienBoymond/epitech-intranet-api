@@ -49,6 +49,8 @@ Api for Epitech Intranet
         intra.module.getModuleByStatus(status) return all the modules with the status
     getModuleByGrades
         intra.module.getModuleByGrades(grades) return all the modules with the grades
+    getStatusRegisterProject
+        intra.module.getStatusRegisterProject(status) return RegisterProject Status
     registerModule
         intra.module.registerModule(module) register you to a module
     unregisterModule
@@ -80,3 +82,11 @@ Api for Epitech Intranet
         intra.project.getProjectByModdule(moduleId) return the project with the moduleId
     getProjectByModuleAndName
         intra.project.getProjectByModuleAndName(moduleId, name) return the project with the moduleId and name
+    getProjectFile
+        intra.project.getProjectFile("B-PRO-300", "Internship") return you the file of the project
+    getStatusRegisterProject
+        intra.project.getStatusRegisterProject() return the status register project
+    registerProject
+        intra.project.registerProject("B-PRO-300", "Internship")) register you to a project
+    unregisterProject
+        intra.project.unregisterProject("B-PRO-300", "Internship")) unregister you from a project
