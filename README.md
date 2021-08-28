@@ -70,8 +70,6 @@ Api for Epitech Intranet
 # Home :
     getBoard
         intra.home.getBoard() return the Home Board page of Intranet
-    getCurrentActivity
-        intra.home.getCurrentActivity() return the current activity
 
 # Projects :
     getCurrentProjet
@@ -90,3 +88,7 @@ Api for Epitech Intranet
         intra.project.registerProject("B-PRO-300", "Internship")) register you to a project
     unregisterProject
         intra.project.unregisterProject("B-PRO-300", "Internship")) unregister you from a project
+
+# Activites :
+    getCurrentActivity
+        intra.home.getCurrentActivity() return the current activity

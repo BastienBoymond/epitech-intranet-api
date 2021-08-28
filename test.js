@@ -106,10 +106,6 @@ const intra = new IntranetApi(token.token);
 //   console.log(notes);
 // });
 
-// intra.home.getCurrentActivity().then(function (activity) {
-//   console.log(activity);
-// });
-
 // intra.project.getProjectByModule("B-MUL-100").then(function (projet) {
 //   console.log(projet);
 // });
@@ -152,4 +148,8 @@ const intra = new IntranetApi(token.token);
 
 // intra.module.getStatusRegisterModule("B-PRO-300").then(function (status) {
 //   console.log(status);
+// });
+
+// intra.activities.getCurrentActivity().then(function (activity) {
+//   console.log(activity);
 // });
