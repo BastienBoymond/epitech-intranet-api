@@ -36,6 +36,8 @@ Api for Epitech Intranet
         intra.user.getPicture() return the user url Picture
     getNotifications
         intra.user.getNotifications() return the user Notifications
+    getXp
+        intra.user.getXp(year) return the user XP
 
 # Modules:
 

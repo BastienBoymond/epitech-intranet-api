@@ -153,3 +153,7 @@ const intra = new IntranetApi(token.token);
 // intra.activities.getCurrentActivity().then(function (activity) {
 //   console.log(activity);
 // });
+
+// intra.user.getXp(2020).then(function (xp) {
+//   console.log(xp);
+// });
