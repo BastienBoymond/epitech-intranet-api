@@ -37,7 +37,7 @@ Api for Epitech Intranet
     getNotifications
         intra.user.getNotifications() return the user Notifications
     getXp
-        intra.user.getXp(year) return the user XP
+        intra.user.getXp(year, ?detail) return the user XP
 
 # Modules:
 
