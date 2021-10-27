@@ -1,6 +1,11 @@
-# epitechIntranetApi
-Api for Epitech Intranet
-    https://www.npmjs.com/package/epitech_intranet_api
+
+<div align="center">
+    <h1>epitechIntranetApi</h1>
+
+[![Pypi](https://img.shields.io/npm/dm/epitech_intranet_api?label=Download&color=brightgreen&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/epitech_intranet_api)
+[![Pypi](https://img.shields.io/npm/v/epitech_intranet_api?label=Version&color=brightgreen&logo=npm&style=for-the-badge)](https://www.npmjs.com/package/epitech_intranet_api)
+</div>
+
 # Install
     npm i epitech_intranet_api
 # Use it:
