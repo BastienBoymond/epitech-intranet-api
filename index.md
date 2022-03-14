@@ -1,37 +1,179 @@
-## Welcome to GitHub Pages
+## Welcome to epitech_intranet_api Pages
 
-You can use the [editor on GitHub](https://github.com/BastienBoymond/epitechIntranetApi/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Setup the API
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+In terminal:
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+~ npm i epitech_intranet_api
+```
+In File:
+```js
+const IntranetApi = require("epitech_intranet_api");
+const intra = new IntranetApi(/* TOKEN */);
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+### Routes
 
-### Jekyll Themes
+Here was the different route I create with my API 
+```js
+intra.user.getGpa().then(function (GPA) {
+console.log(GPA);
+});
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/BastienBoymond/epitechIntranetApi/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+intra.user.getCredits().then(function (credits) {
+console.log(credits);
+});
+
+intra.user.getPromo().then(function (promo) {
+console.log(promo);
+});
+
+intra.user.getName().then(function (name) {
+console.log(name);
+});
+
+intra.user.getScolarYear().then(function (scolarYear) {
+console.log(scolarYear);
+});
+
+intra.user.getEpitechEmail().then(function (epiEmail) {
+console.log(epiEmail);
+});
+
+intra.user.getBinomes().then(function (binomes) {
+console.log(binomes);
+});
+
+intra.user.getFlags().then(function (flags)  {
+console.log(flags);
+});
+
+intra.user.getFlags("medal").then(function (flags) {
+console.log(flags);
+});
+
+intra.user.getFlags("remarkable").then(function (flags) {
+console.log(flags);
+});
+
+intra.user.getPicture().then(function (picture) {
+console.log(picture);
+});
+
+intra.user.getSemester().then(function (semester) {
+console.log(semester);
+});
+
+intra.user.getProfile().then(function (profile) {
+console.log(profile);
+});
+
+intra.module.getAllModules().then(function (modules) {
+  console.log(modules);
+});
+
+intra.module.getModuleById("B-INN-000").then(function (module) {
+  console.log(module);
+});
+
+intra.module.getModulesBySemester(3).then(function (modules) {
+  console.log(modules);
+});
+
+intra.module.getModuleByStatus("ongoing").then(function (modules) {
+  console.log(modules);
+});
+
+intra.module.getModuleByName("InteRNship").then(function (module) {
+  console.log(module);
+});
+
+intra.module.getModuleByGrades("C").then(function (modules) {
+  console.log(modules);
+});
+
+intra.planning.getCurrentPlanning(2).then(function (plannings) {
+  console.log(plannings);
+});
+
+intra.grades.getGrades("B-MUL-100").then(function (grades) {
+  console.log(grades);
+});
+
+intra.user.getNotification("message").then(function (notification) {
+  console.log(notification);
+});
+
+intra.home.getBoard().then(function (users) {
+  console.log(users);
+});
+
+intra.project.getCurrentProjet().then(function (projet) {
+  console.log(projet);
+});
+
+intra.grades.getCurrentNotes().then(function (notes) {
+  console.log(notes);
+});
+
+intra.project.getProjectByModule("B-MUL-100").then(function (projet) {
+  console.log(projet);
+});
+
+intra.project.getProjectByModuleAndName("B-MUL-100", "MyradAr").then(function (projet) {
+  console.log(projet);
+});
+
+intra.project.getCurrentProjectByName("stage").then(function (projet) {
+  console.log(projet);
+});
+
+intra.module.registerModule("B-PRO-300").then(function (module) {
+  console.log(module);
+});
+
+intra.module.unregisterModule("B-PRO-300").then(function (module) {
+  console.log(module);
+});
+
+intra.project.getActiviyProject("B-MUL-100", "myRadar").then(function (projet) {
+  console.log(projet);
+});
+
+intra.project.unregisterProject("B-PRO-300", "Internship").then(function (projet) {
+  console.log(projet);
+});
+
+intra.project.registerProject("B-PRO-300", "Internship").then(function (projet) {
+  console.log(projet);
+});
+
+intra.project.getProjectFile("B-PRO-300", "Internship").then(function (file) {
+  console.log(file);
+});
+
+intra.project.getStatusRegisterProject("B-PRO-300", "Internship").then(function (status) {
+  console.log(status);
+});
+
+intra.module.getStatusRegisterModule("B-PRO-300").then(function (status) {
+  console.log(status);
+});
+
+intra.activities.getCurrentActivity().then(function (activity) {
+  console.log(activity);
+});
+
+intra.user.getXp(2021).then(function (xp) {
+  console.log(xp);
+});
+
+intra.user.getXp(2020).then(function (xp) {
+    console.log(xp);
+});
+
+```
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Having trouble with API? Contact me on mail [contact support](bastien.boymond@epitech.eu) and we’ll help you sort it out.
